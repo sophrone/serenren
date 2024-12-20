@@ -1,0 +1,145 @@
+.productHeader {
+  text-align: center;
+  margin: var(--spacer-2) var(--spacer-0);
+  background-color: var(--bg-3);
+  padding: var(--spacer-3) var(--spacer-1);
+  border-radius: var(--spacer-1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+}
+
+.productHeader h1 {
+  font-size: var(--larger);
+  color: var(--black);
+  font-weight: bold;
+}
+
+.productHeader p {
+  font-size: var(--medium);
+  color: var(--black);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--space-scale);
+  animation: slideIn 1s ease-out;
+}
+
+.productCard {
+  border: 1px solid #ddd;
+  padding: var(--spacer-2);
+  border-radius: var(--space-scale);
+  overflow: hidden;
+  width: calc(100% - 20px);
+  max-width: 300px;
+  margin: var(--space-scale);
+  transition: box-shadow 0.3s, transform 0.3s;
+  animation: slideIn 1s ease-out;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--space-scale);
+}
+
+.productTitle {
+  font-size: var(--large);
+  margin: var(--space-scale) var(--spacer-0);
+}
+
+.productPrice {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.searchInput {
+  width: 100%;
+  padding: var(--space-scale);
+  margin-top: var(--space-scale);
+  border: 1px solid #ddd;
+  border-radius: var(--space-scale);
+  font-size: var(--medium);
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacer-4);
+}
+
+.pageButton {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--secondary-dark);
+  color: white;
+  cursor: pointer;
+  border-radius: var(--space-scale);
+}
+
+.pageButton:hover {
+  background-color: var(--dark-blue);
+}
+
+.activePage {
+  background-color: var(--dark-blue);
+  border-radius: var(--space-scale);
+}
+
+/* Sort select styles */
+.sortSelect {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--space-scale);
+  font-size: var(--medium);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .sortSelect {
+    font-size: var(--small);
+  }
+
+  .productHeader h1 {
+    font-size: var(--large);
+  }
+
+  .productHeader p {
+    font-size: var(--small);
+  }
+
+  .productCard {
+    width: calc(100% - 20px);
+    margin: var(--space-scale);
+  }
+
+  .searchInput {
+    font-size: var(--small);
+  }
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

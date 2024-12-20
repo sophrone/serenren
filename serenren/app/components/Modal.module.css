@@ -1,0 +1,38 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: var(--white);
+  padding: var(--spacer-5);
+  border-radius: var(--space-scale);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: slideInFromBottom 0.75s ease-out;
+}
+
+/* Keyframes for the slide-in effect from the bottom */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.productPrice {
+  font-weight: bold;
+}

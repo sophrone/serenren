@@ -1,0 +1,42 @@
+.navbar {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: var(--space-scale);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacer-12);
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Default logo size */
+.logo img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+/* Responsive logo size for mobile devices */
+@media (max-width: 768px) {
+  .logo img {
+    height: 70px; 
+  }
+  .logo {
+    justify-content: center;
+    margin-bottom: var(--spacer-5);
+    margin-top: var(--space-scale);
+  }
+}

@@ -1,0 +1,82 @@
+.background {
+  background-image: url("/image2.jpg");
+  background-size: auto;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  padding: var(--spacer-2);
+  animation: slideIn 1s ease-out;
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .background {
+    height: 250px;
+    padding: var(--spacer-1);
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  animation: slideIn 1s ease-out;
+}
+
+.serviceCard {
+  background-color: var(--white);
+  border-radius: var(--space-scale);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: var(--spacer-2);
+  margin: var(--space-scale);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+  animation: slideIn 1s ease-out;
+  cursor: pointer;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.serviceCard:active {
+  color: var(--white);
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for service cards */
+@media (max-width: 768px) {
+  .serviceCard {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.serviceCard:active {
+  transform: scale(0.95);
+}

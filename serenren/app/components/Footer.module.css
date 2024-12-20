@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: var(--spacer-2);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.socialMedia a {
+  margin: 0 10px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.socialMedia a:hover {
+  text-decoration: underline;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,156 @@
+/*********************************************
+ /*
+ Simple css reset
+ https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Playfair Display", serif;
+}
+
+#__next {
+  isolation: isolate;
+}
+/*********************************************/
+
+:root {
+  /* Typography */
+
+  --base-font-size: 0.875rem;
+  --typescale-ratio: 1.333;
+
+  --small: calc(var(--base-font-size) / var(--typescale-ratio));
+  --smaller: calc(var(--small) / var(--typescale-ratio));
+
+  --medium: calc(var(--base-font-size) * var(--typescale-ratio));
+
+  --large: calc(var(--medium) * var(--typescale-ratio));
+  --larger: calc(var(--large) * var(--typescale-ratio));
+  --x-large: calc(var(--larger) * var(--typescale-ratio));
+  --xx-large: calc(var(--x-large) * var(--typescale-ratio));
+
+  /* Colors */
+
+  --black: #222222;
+  --white: #ffffff;
+  --bg: #f2f2f2;
+  --bg-2: #f9f9f9;
+  --bg-3: #f8f9fa;
+
+  --primary: #5c5d8d;
+  --secondary: #d9d9d9;
+  --secondary-light: #d9d9d980;
+  --secondary-dark: #555;
+  --green: #28a745;
+  --dark-blue: #005bb5;
+  --light-blue: #3498db;
+
+  /* Spacing */
+
+  --space-scale: 8px;
+
+  --spacer-0: 0;
+  --spacer-1\/2: calc(var(--space-scale) / 2);
+
+  --spacer-1: var(--space-scale);
+  --spacer-2: calc(var(--space-scale) * 2);
+  --spacer-3: calc(var(--space-scale) * 3);
+  --spacer-4: calc(var(--space-scale) * 4);
+  --spacer-5: calc(var(--space-scale) * 5);
+  --spacer-6: calc(var(--space-scale) * 6);
+  --spacer-7: calc(var(--space-scale) * 7);
+  --spacer-8: calc(var(--space-scale) * 8);
+  --spacer-9: calc(var(--space-scale) * 9);
+  --spacer-10: calc(var(--space-scale) * 10);
+  --spacer-11: calc(var(--space-scale) * 11);
+  --spacer-12: calc(var(--space-scale) * 12);
+
+  /* Screen sizes */
+  /* 0-550px — Mobile */
+  /* 551-1100px — Tablet */
+  /* 1101-1500px — Laptop */
+  /* 1501+px — Desktop */
+
+  font-size: var(--base-font-size);
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--black);
+}
