@@ -2,6 +2,9 @@
   background-color: var(--primary);
   color: var(--white);
   padding: var(--space-scale);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .navbar ul {
@@ -11,6 +14,7 @@
   justify-content: center;
   gap: var(--spacer-12);
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -23,7 +27,6 @@
   align-items: center;
 }
 
-/* Default logo size */
 .logo img {
   border-radius: 50%;
   height: 100px;
@@ -32,11 +35,14 @@
 /* Responsive logo size for mobile devices */
 @media (max-width: 768px) {
   .logo img {
-    height: 70px; 
+    height: 100px;
   }
   .logo {
     justify-content: center;
     margin-bottom: var(--spacer-5);
     margin-top: var(--space-scale);
+  }
+  .navbar ul {
+    gap: var(--spacer-5);
   }
 }

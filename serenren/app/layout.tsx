@@ -3,7 +3,7 @@ import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] }); 
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Serenren",
@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/serenren-logo.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={playfair.className}> 
         <Navbar />

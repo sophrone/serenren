@@ -156,9 +156,9 @@ const ProductPage = () => {
                 alt={product.title}
                 className={styles.productImage}
                 onClick={() => handleImageClick(product)}
-                width={300} // Specify width
-                height={300} // Specify height
-                layout="responsive" // Maintain aspect ratio
+                width={300} 
+                height={300} 
+                layout="responsive" 
               />
               <p>{product.description}</p>
               <p className={styles.productPrice}>{product.price}</p>

@@ -93,7 +93,7 @@ const AboutPage = () => {
         color: 'var(--black)',
         fontSize: 'var(--medium)',
       }}>
-        Founded in [Year], Serenren began as a small tailoring shop and has since grown into a
+        Founded in 2022, Serenren began as a small tailoring shop and has since grown into a
         renowned brand. Our skilled team of tailors and designers work diligently to create pieces that are
         not only stylish but also comfortable and functional.
       </p>

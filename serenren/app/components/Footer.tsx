@@ -12,8 +12,8 @@ const Footer = () => {
           <a href="/contact">Contact</a>
         </nav>
         <div className={styles.socialMedia}>
-          <a href="https://web.facebook.com/profile.php?id=100081109714486" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://instagram.com/serenren__" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://web.facebook.com/profile.php?id=100081109714486" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
       </div>
     </footer>

@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
+  overflow-x: hidden;
 }
 
 img,
@@ -29,6 +30,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -153,4 +155,16 @@ button {
 body {
   background-color: var(--bg);
   color: var(--black);
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: var(--small);
+  }
+}
+
+@media (min-width: 551px) and (max-width: 1100px) {
+  body {
+    font-size: var(--medium);
+  }
 }
