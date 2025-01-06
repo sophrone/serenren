@@ -7,7 +7,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] }
 
 export const metadata: Metadata = {
   title: "Serenren",
-  description: "A fashion website for serenren showing products and services",
+  description: "A fashion website for Serenren showing products and services",
 };
 
 export default function RootLayout({

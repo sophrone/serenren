@@ -9,7 +9,7 @@ const AboutPage = () => {
       backgroundColor: 'var(--bg-2)',
       borderRadius: 'var(--space-scale)',
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-      animation: 'slideIn 1s ease-out' 
+      animation: 'slideInFromLeft 1s ease-out' 
     }}>
       <style>
         {`
@@ -39,13 +39,13 @@ const AboutPage = () => {
             }
           }
 
-          @keyframes slideIn {
+          @keyframes slideInFromLeft {
             from {
-              transform: translateY(100%); 
+              transform: translateX(-100%); 
               opacity: 0; 
             }
             to {
-              transform: translateY(0); 
+              transform: translateX(0); 
               opacity: 1; 
             }
           }
@@ -64,8 +64,7 @@ const AboutPage = () => {
         color: 'var(--black)',
         fontSize: 'var(--medium)',
       }}>
-        Welcome to Serenren, where we specialize in providing high-quality, custom-tailored clothing
-        designed to fit your unique style and preferences.
+        Welcome to Serenren, where we specialize in providing the modern woman with versatile and elegant clothing that exude a unique style.
       </p>
       <h2 style={{
         fontSize: 'var(--larger)',
@@ -78,9 +77,7 @@ const AboutPage = () => {
         color: 'var(--black)',
         fontSize: 'var(--medium)',
       }}>
-        Our mission is to empower individuals through fashion by offering personalized clothing solutions that
-        enhance confidence and self-expression. We believe that everyone deserves to wear clothes that fit
-        perfectly and reflect their personality.
+        Our mission is to excellently deliver ready to wear clothing as its finest and most unique form and style.
       </p>
       <h2 style={{
         fontSize: 'var(--larger)',
@@ -93,9 +90,7 @@ const AboutPage = () => {
         color: 'var(--black)',
         fontSize: 'var(--medium)',
       }}>
-        Founded in 2022, Serenren began as a small tailoring shop and has since grown into a
-        renowned brand. Our skilled team of tailors and designers work diligently to create pieces that are
-        not only stylish but also comfortable and functional.
+        Borne out of a desire to produce clothes that are versatile and functional, Serenren was founded in the year 2019. Since then we have grown into a renowned brand that thrives in the fashion industry.
       </p>
       <h2 style={{
         fontSize: 'var(--larger)',
@@ -107,9 +102,9 @@ const AboutPage = () => {
         color: 'var(--black)',
         marginBottom: 'var(--spacer-2)',
       }}>
-        <li style={{ marginBottom: 'var(--space-scale)' }}>Custom Designs: Tailored to your specifications.</li>
-        <li style={{ marginBottom: 'var(--space-scale)' }}>Quality Materials: Only the best fabrics are used.</li>
-        <li style={{ marginBottom: 'var(--space-scale)' }}>Exceptional Service: We prioritize customer satisfaction.</li>
+        <li style={{ marginBottom: 'var(--space-scale)' }}>Unique Designs.</li>
+        <li style={{ marginBottom: 'var(--space-scale)' }}>Quality Materials: Only the best of the best materials are used in production.</li>
+        <li style={{ marginBottom: 'var(--space-scale)' }}>Exceptional Service</li>
       </ul>
     </div>
   );
