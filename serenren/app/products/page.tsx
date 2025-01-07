@@ -56,9 +56,9 @@ const ProductPage = () => {
       price: "$45",
     },
     {
-      title: "Maddona Top and Dress",
+      title: "Maddona Top and Sasha Pant",
       image: "/image5.jpg",
-      description: "The Maddona Top and Dress offers versatile styling with chic elegance for any occasion.",
+      description: "The Maddona Top and Sasha Pant offers versatile styling with chic elegance for any occasion.",
       price: "$45",
     },
     {
